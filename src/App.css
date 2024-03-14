@@ -1,0 +1,417 @@
+body, html {
+  /* height: 100%; */
+  margin: 0;
+  padding: 0;
+  background-image: url('data:image/jpeg;base64,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'); /* Replace with the actual path to your image */
+  background-position: center;
+}
+
+
+
+
+/* HomePage.css */
+
+
+.home {
+  position: relative;
+  background-image: url('https://img.freepik.com/free-vector/shiny-indian-rupee-digital-currency-background-with-circuit-lines_1017-41186.jpg?size=626&ext=jpg&ga=GA1.1.931749097.1696952559&semt=ais'); /* Replace with the actual path to your image */
+ /* background-position: center; */ 
+  position: relative;
+  background-color: #1c1c1c;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.rotating-gif {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation: rotate 20s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.content {
+  color: #d8dbe0;
+  text-align: center;
+}
+
+.animated-text {
+  animation: fadeIn 2s ease-out, bounce 1s ease-in-out infinite;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+
+
+/* AppointmentPage.css */
+
+.appointment {
+  position: relative;
+  background-image: url('https://img.freepik.com/free-vector/gradient-network-connection-background_23-2148865393.jpg?w=740&t=st=1710171947~exp=1710172547~hmac=b274ce90cdb128377bfaa606df4a1ad0fe0fc304703e596d13fe93196b4ea214');
+  background-position: center;
+  color: #d8dbe0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.appointment-container {
+  text-align: center; /* Center text content */
+}
+
+.appointment-form {
+  width: 300px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  margin: auto; /* Center the form horizontally */
+}
+
+/* Add styles to make the h4 tag more attractive */
+.appointment-container h4 {
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.appointment-label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.appointment-input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #333;
+}
+
+.appointment-button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #3498db;
+  color: white;
+  cursor: pointer;
+}
+
+.appointment-button:hover {
+  background-color: #2980b9;
+}
+
+
+
+/* CreditPage.css */
+
+.credit-page {
+  background: url('https://img.freepik.com/free-vector/gradient-network-connection-background_23-2148865393.jpg?w=740&t=st=1710171947~exp=1710172547~hmac=b274ce90cdb128377bfaa606df4a1ad0fe0fc304703e596d13fe93196b4ea214') center/cover no-repeat; /* Replace with your background image URL */
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.credit-container {
+  background-color: rgba(0, 0, 0, 0.7);
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #3498db;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(52, 152, 219, 0.5);
+  color: #fff;
+}
+
+.credit-header {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.balance-text {
+  text-align: center;
+  color: #0da314;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.credit-form {
+  margin-top: 20px;
+}
+
+.credit-label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.credit-input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+
+.credit-button {
+  background-color: #3498db;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.credit-button:hover {
+  background-color: #2980b9;
+}
+
+
+
+ /*debit page*/
+ 
+ .debit-page {
+  background: url('https://img.freepik.com/free-vector/gradient-network-connection-background_23-2148865393.jpg?w=740&t=st=1710171947~exp=1710172547~hmac=b274ce90cdb128377bfaa606df4a1ad0fe0fc304703e596d13fe93196b4ea214') center/cover no-repeat; /* Replace with your background image URL */
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.debit-container {
+  background-color: rgba(0, 0, 0, 0.7);
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #e74c3c;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(231, 76, 60, 0.5);
+  color: #fff;
+}
+
+.debit-header {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.balance-text {
+  text-align: center;
+  color: #0da314;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.debit-form {
+  margin-top: 20px;
+}
+
+.debit-label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.debit-input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+
+.debit-button {
+  background-color: #e74c3c;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.debit-button:hover {
+  background-color: #c0392b;
+}
+
+
+
+/* AllDetails.css */
+
+/* AllDetails.css */
+.alldetails {
+  
+    background-image: url('https://img.freepik.com/free-vector/gradient-network-connection-background_23-2148865393.jpg?w=740&t=st=1710171947~exp=1710172547~hmac=b274ce90cdb128377bfaa606df4a1ad0fe0fc304703e596d13fe93196b4ea214');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; /* Ensure this property is set to cover */
+    color: #d8dbe0;
+    height: 100vh;
+    overflow: hidden;
+  
+  
+}
+
+.all-details-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.all-details-container h2 {
+  text-align: center;
+  margin-bottom: 20px; /* Add some margin at the bottom of the heading */
+}
+
+.details-list {
+  list-style: none;
+  padding: 0;
+}
+
+.details-item {
+  background-color: #060913;
+  border: 1px solid #d8dbe0;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  padding: 15px;
+}
+
+.details-item strong {
+  color: #007bff;
+  display: block; /* Display each strong element on a new line */
+  margin-bottom: 8px; /* Add margin between each strong element */
+}
+
+.details-item:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease-in-out;
+}
+
+
+/* Navbar.css */
+
+.navbar {
+  background-color: #343a40; /* Dark background color */
+}
+
+.navbar-brand {
+  color: #ffffff; /* White text color for brand */
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar-toggler-icon {
+  background-color: #ffffff; /* White color for the toggle icon */
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+.nav-link {
+  color: #ffffff; /* White text color for links */
+  margin-right: 15px;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+  color: #17a2b8; /* Light blue color on hover */
+}
+
+
+
+.account {
+  background-image: url('https://img.freepik.com/free-vector/gradient-network-connection-background_23-2148865393.jpg?w=740&t=st=1710171947~exp=1710172547~hmac=b274ce90cdb128377bfaa606df4a1ad0fe0fc304703e596d13fe93196b4ea214');
+  background-color: #f8f9fa; /* Background color for the entire page */
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.account-creation-container {
+  background-color: rgba(0, 0, 0, 0.7);
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #3498db;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(52, 152, 219, 0.5);
+  color: #fff;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.form-input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+
+.form-button {
+  background-color: #3498db;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-button:hover {
+  background-color: #2980b9;
+}
+
+.error-message {
+  color: #e74c3c;
+  margin-bottom: 10px;
+}
+
+
+
+
